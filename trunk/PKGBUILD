@@ -9,9 +9,9 @@ pkgdesc='KDE Plasma Desktop'
 arch=(x86_64)
 url='https://kde.org/plasma-desktop/'
 license=(LGPL)
-source=(https://download.kde.org/stable/plasma/$pkgver/$pkgname-$pkgver.tar.xz{,.sig}
-        https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/858.diff
-        https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/851.diff)
+source=(https://download.kde.org/stable/plasma/$pkgver/$pkgname-$pkgver.tar.xz{,.sig})
+source+=(https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/858.diff)
+source+=(https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/851.diff)
 depends=(gawk kdelibs4support polkit-kde-agent kmenuedit systemsettings baloo xdg-user-dirs libibus)
 optdepends=('plasma-nm: Network manager applet'
             'powerdevil: power management, suspend and hibernate support'
